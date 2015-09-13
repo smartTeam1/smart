@@ -5,4 +5,111 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- 父样式-->
+    <!-- width:match_parent height:0dp-->
+    <style name="ParentWidthPercentHeight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <!-- width:wrap_content height:0dp-->
+    <style name="WrapWidthPercentHeight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <!-- width:0dp height:0dp-->
+    <style name="PercentWidthPercentHeight">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <!-- 标题栏背景样式-->
+    <style name="actionBar_style" parent="@style/ParentWidthPercentHeight">
+        <item name="android:background">@color/theme_color</item>
+    </style>
+    <!-- 标题栏分割线样式-->
+    <style name="actionBar_divider_style">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">2px</item>
+        <item name="android:background">@color/divider_color</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!-- 标题栏“标题”样式-->
+    <style name="actionBar_title_style" parent="@style/WrapWidthPercentHeight">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/activity_bar_title_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 标题栏“上一步”样式-->
+    <style name="actionBar_back_style" parent="@style/WrapWidthPercentHeight">
+        <item name="android:src">@drawable/btn_back</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- 标题栏“下一步”样式-->
+    <style name="actionBar_nextStep_style" parent="@style/WrapWidthPercentHeight">
+        <item name="android:textColor">@drawable/btn_white_text_color</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">@dimen/activity_bar_btn_text_size</item>
+    </style>
+    <!-- 白色背景输入框-->
+    <style name="WhiteBkInputBox" parent="@style/WrapWidthPercentHeight">
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <!-- 输入框分割线1-->
+    <style name="InputBoxDivider1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/input_box_divider_width</item>
+        <item name="android:background">@color/hint_color</item>
+    </style>
+    <!-- 白色selector信息显示背景-->
+    <style name="WhiteSelectorBk">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/white_bk_selector</item>
+        <item name="android:paddingLeft">@dimen/profile_attr_padding</item>
+        <item name="android:paddingRight">@dimen/profile_attr_padding</item>
+    </style>
+    <!-- 信息条左侧标题-->
+    <style name="InfoLeftTitle">
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textSize">@dimen/profile_attr_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <!-- 信息条右侧内容-->
+    <style name="InfoRightTxtContent">
+        <item name="android:textColor">@color/text_gray_dark</item>
+        <item name="android:textSize">@dimen/profile_attr_text_size</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <!-- 圆角绿底白边按钮白色字体-->
+    <style name="RoundedStrokeBtnStyle" parent="@style/PercentWidthPercentHeight">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/btn_rounded_stroke_bg</item>
+    </style>
+    <!-- 圆角白底绿边按钮主题色字体-->
+    <style name="RoundedStrokeBtnStyle2" parent="@style/PercentWidthPercentHeight">
+        <item name="android:textColor">@color/theme_color</item>
+        <item name="android:background">@drawable/rounded_stroke_rect_bg2</item>
+    </style>
+    <!-- 单行输入框样式-->
+    <style name="SingleLineEditBox">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">@dimen/edit_textview_padding</item>
+        <item name="android:paddingRight">@dimen/edit_textview_padding</item>
+    </style>
+    <!-- 圆形ImageView-->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
 </resources>

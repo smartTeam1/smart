@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">smart</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="mail_suffix">#064</string>
 </resources>

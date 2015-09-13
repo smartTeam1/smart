@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cqyw.smart.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/theme_color">
+    <!-- action bar-->
+    <android.support.percent.PercentRelativeLayout
+        style="@style/actionBar_style"
+        app:layout_heightPercent="8%p">
+        <ImageView
+            android:id="@+id/register_ev2_back"
+            app:layout_heightPercent="50%p"
+            style="@style/actionBar_back_style"/>
+
+        <View
+            android:layout_toRightOf="@id/register_ev2_back"
+            app:layout_heightPercent="55%p"
+            style="@style/actionBar_divider_style"/>
+        <TextView
+            android:id="@+id/ev2_reVerify"
+            app:layout_heightPercent="50%p"
+            android:text="重新选择验证方式"
+            style="@style/actionBar_nextStep_style"
+            />
+    </android.support.percent.PercentRelativeLayout>
+
+    <!-- 发送邮箱验证码-->
+    <com.cqyw.smart.view.PercentLinearLayout
+        android:id="@+id/send_mailcode_layout"
+        style="@style/PercentWidthPercentHeight"
+        app:layout_widthPercent="90%p"
+        app:layout_heightPercent="30%p"
+        app:layout_marginTopPercent="8%p"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入邮箱地址，接受邮箱验证码"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+        <com.cqyw.smart.view.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="25%p"
+            app:layout_marginTopPercent="10%"
+            android:background="@drawable/rounded_white_bg">
+            <EditText
+                android:id="@+id/ev2_mail_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="55%p"
+                android:hint="请输入邮箱名"
+                style="@style/SingleLineEditBox"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/theme_color"
+                android:textSize="13sp"
+                android:text="\@mail.ustc.edu.cn"
+                android:gravity="center"/>
+        </com.cqyw.smart.view.PercentLinearLayout>
+        <Button
+            android:id="@+id/ev2_send_mailcode"
+            style="@style/RoundedStrokeBtnStyle"
+            app:layout_marginTopPercent="20%p"
+            app:layout_widthPercent="50%"
+            app:layout_heightPercent="25%"
+            android:text="发送邮箱验证码"/>
+    </com.cqyw.smart.view.PercentLinearLayout>
+    <!-- 确认邮箱验证码-->
+    <com.cqyw.smart.view.PercentLinearLayout
+        style="@style/PercentWidthPercentHeight"
+        app:layout_marginTopPercent="10%p"
+        app:layout_widthPercent="80%p"
+        app:layout_heightPercent="24%p"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <com.cqyw.smart.view.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="30%"
+            android:background="@drawable/rounded_white_bg">
+            <EditText
+                android:id="@+id/ev2_confirm_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/edit_textview_padding"
+                android:paddingRight="@dimen/edit_textview_padding"
+                app:layout_widthPercent="75%"
+                android:inputType="number"
+                style="@style/SingleLineEditBox"
+                android:hint="请输入邮件验证码"/>
+            <Button
+                android:id="@+id/ev2_resend_code"
+                style="@style/RoundedStrokeBtnStyle2"
+                app:layout_widthPercent="20%p"
+                app:layout_heightPercent="70%p"
+                app:layout_marginStartPercent="2%"
+                app:layout_marginLeftPercent="2%"
+                android:layout_gravity="center_vertical"
+                android:text="重发"
+                />
+        </com.cqyw.smart.view.PercentLinearLayout>
+
+        <Button
+            android:id="@+id/ev2_confirm_btn"
+            style="@style/RoundedStrokeBtnStyle"
+            app:layout_marginTopPercent="20%"
+            app:layout_widthPercent="50%"
+            app:layout_heightPercent="30%"
+            android:text="确认"
+            android:layout_gravity="center_horizontal"/>
+
+    </com.cqyw.smart.view.PercentLinearLayout>
+
+
+</com.cqyw.smart.view.PercentLinearLayout>

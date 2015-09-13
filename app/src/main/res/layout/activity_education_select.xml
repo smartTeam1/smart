@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cqyw.smart.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- action bar-->
+    <android.support.percent.PercentRelativeLayout
+        style="@style/actionBar_style"
+        app:layout_heightPercent="8%p">
+        <ImageView
+            android:id="@+id/select_education_back"
+            app:layout_heightPercent="50%p"
+            style="@style/actionBar_back_style"/>
+
+        <View
+            android:layout_toRightOf="@id/select_education_back"
+            app:layout_heightPercent="55%p"
+            style="@style/actionBar_divider_style"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <TextView
+        app:layout_marginTopPercent="5%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择学历信息"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="128dp"
+        app:layout_widthPercent="75%p"
+        android:layout_marginTop="10dp"
+        android:padding="2dp"
+        android:background="@drawable/rounded_white2_bg"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:id="@+id/undergraduate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/text_gray_dark"
+            android:text="本科"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <View style="@style/InputBoxDivider1"/>
+
+        <TextView
+            android:id="@+id/graduate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/text_gray_dark"
+            android:text="研究生"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <View style="@style/InputBoxDivider1"/>
+
+        <TextView
+            android:id="@+id/phd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/text_gray_dark"
+            android:text="博士"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</com.cqyw.smart.view.PercentLinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_bar_title_size">20sp</dimen>
+    <dimen name="activity_bar_btn_text_size">18sp</dimen>
+    <dimen name="rounded_bg_radius">13dp</dimen>
+    <dimen name="rounded_btn_bg_radius">8dp</dimen>
+    <dimen name="input_box_divider_width">1dip</dimen>
+    <dimen name="profile_attr_padding">25dp</dimen>
+    <dimen name="profile_attr_text_size">18sp</dimen>
+    <dimen name="edit_textview_padding">6dp</dimen>
+</resources>

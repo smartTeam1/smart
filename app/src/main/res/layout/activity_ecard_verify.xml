@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cqyw.smart.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/theme_color">
+    <!-- action bar-->
+    <android.support.percent.PercentRelativeLayout
+        style="@style/actionBar_style"
+        app:layout_heightPercent="8%p">
+        <ImageView
+            android:id="@+id/register_ev_back"
+            app:layout_heightPercent="50%p"
+            style="@style/actionBar_back_style"/>
+
+        <View
+            android:layout_toRightOf="@id/register_ev_back"
+            app:layout_heightPercent="55%p"
+            style="@style/actionBar_divider_style"
+            app:layout_marginLeftPercent="1%p"
+            app:layout_marginRightPercent="2%p"/>
+        <TextView
+            style="@style/actionBar_title_style"
+            app:layout_heightPercent="50%p"
+            android:text="校园卡认证"
+            />
+    </android.support.percent.PercentRelativeLayout>
+
+    <com.cqyw.smart.view.PercentLinearLayout
+        style="@style/PercentWidthPercentHeight"
+        app:layout_widthPercent="80%p"
+        app:layout_heightPercent="50%p"
+        android:background="@drawable/rounded_white2_bg"
+        app:layout_marginTopPercent="4%"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/ecard_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="@dimen/edit_textview_padding"
+            android:paddingRight="@dimen/edit_textview_padding"
+            app:layout_heightPercent="17%p"
+            android:hint="请输入学号"
+            android:background="@drawable/rounded_white_bg"
+            android:textColorHint="@color/hint_color"/>
+        <ImageView
+            android:id="@+id/ecard_image"
+            app:layout_marginTopPercent="5%p"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/add_picture_icn"
+            android:background="@android:color/white"/>
+        <TextView
+            app:layout_marginTopPercent="4%p"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传校园卡照片"
+            android:textSize="18sp"
+            android:textColor="@color/text_gray_dark"/>
+
+        <Button
+            android:id="@+id/btn_upload_ecardImage"
+            app:layout_marginTopPercent="2%p"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="80%p"
+            app:layout_heightPercent="16%p"
+            android:background="@drawable/rounded_green_bg"
+            android:layout_gravity="center_horizontal"
+            android:text="确认上传"
+            android:textColor="@drawable/btn_white_text_color"/>
+
+    </com.cqyw.smart.view.PercentLinearLayout>
+
+    <TextView
+        app:layout_marginTopPercent="6%p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证仅为确认学生身份\n无隐私风险"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/ev_hint_text"
+        app:layout_marginTopPercent="30%p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在审核中，稍等哟..."
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"/>
+
+</com.cqyw.smart.view.PercentLinearLayout>

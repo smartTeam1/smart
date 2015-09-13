@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cqyw.smart.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white2">
+    <!-- action bar-->
+    <android.support.percent.PercentRelativeLayout
+        style="@style/actionBar_style"
+        app:layout_heightPercent="8%p">
+        <ImageView
+            android:id="@+id/friend_profile_back"
+            app:layout_heightPercent="50%p"
+            style="@style/actionBar_back_style"/>
+        <View
+            android:layout_toRightOf="@id/friend_profile_back"
+            app:layout_heightPercent="55%p"
+            style="@style/actionBar_divider_style"
+            app:layout_marginLeftPercent="1%p"
+            app:layout_marginRightPercent="2%p"/>
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="0dp"-->
+            <!--app:layout_heightPercent="50%p"-->
+            <!--android:text="个人资料"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:textSize="@dimen/activity_bar_title_size"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--/>-->
+        <com.cqyw.smart.view.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="40dp"
+            android:background="@drawable/btn_transparent_bg"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center">
+            <Button
+                android:id="@+id/fp_add_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="50%"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="添加好友"
+                android:textColor="@drawable/btn_white_text_color"
+                android:visibility="visible"/>
+            <ImageView
+                android:id="@+id/friend_profile_more"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_heightPercent="50%p"
+                android:src="@mipmap/more_icn"
+                android:visibility="gone"
+                />
+        </com.cqyw.smart.view.PercentLinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+            <!-- 头像-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/white_bk_selector"
+                android:paddingLeft="@dimen/profile_attr_padding"
+                android:paddingRight="@dimen/profile_attr_padding">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="头像"
+                    style="@style/InfoLeftTitle"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/friend_profile_head"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <View style="@style/InputBoxDivider1"/>
+
+            <!-- 昵称-->
+            <RelativeLayout
+                style="@style/WhiteSelectorBk">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    style="@style/InfoLeftTitle"/>
+                <TextView
+                    android:id="@+id/friend_profile_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mildfeng"
+                    style="@style/InfoRightTxtContent"
+                    />
+            </RelativeLayout>
+
+            <View style="@style/InputBoxDivider1"/>
+
+            <!-- 性别-->
+            <RelativeLayout
+                style="@style/WhiteSelectorBk">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    style="@style/InfoLeftTitle"/>
+                <TextView
+                    android:id="@+id/friend_profile_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    style="@style/InfoRightTxtContent"
+                    />
+            </RelativeLayout>
+
+            <View style="@style/InputBoxDivider1"/>
+
+            <!-- 年龄-->
+            <RelativeLayout
+                style="@style/WhiteSelectorBk">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年龄"
+                    style="@style/InfoLeftTitle"/>
+                <TextView
+                    android:id="@+id/friend_profile_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23"
+                    style="@style/InfoRightTxtContent"
+                    />
+            </RelativeLayout>
+
+            <View style="@style/InputBoxDivider1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_box_divider_width"
+                android:background="@color/hint_color"/>
+
+            <!-- 学校信息-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/white_bk_selector"
+                android:paddingLeft="@dimen/profile_attr_padding"
+                android:paddingRight="@dimen/profile_attr_padding">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学校信息"
+                    style="@style/InfoLeftTitle"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/friend_profile_university"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_gray_dark"
+                        android:text="中国科学技术大学"
+                        android:textSize="@dimen/profile_attr_text_size"
+                        />
+                    <TextView
+                        android:id="@+id/friend_profile_grade_xueli"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_gray_dark"
+                        android:text="2012级   本科"
+                        android:textSize="@dimen/profile_attr_text_size"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View style="@style/InputBoxDivider1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/profile_attr_padding"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="相册"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/profile_attr_text_size"/>
+                <GridView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </GridView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</com.cqyw.smart.view.PercentLinearLayout>
