@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.cqyw.smart.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.cqyw.smart.widget.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -64,7 +64,7 @@
 
     <View style="@style/InputBoxDivider1"/>
 
-    <com.cqyw.smart.view.PercentLinearLayout
+    <com.cqyw.smart.widget.PercentLinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_heightPercent="8%"
@@ -84,11 +84,11 @@
             style="@style/SingleLineEditBox"
             android:inputType="textPassword"
             android:hint="设置登录密码"/>
-    </com.cqyw.smart.view.PercentLinearLayout>
+    </com.cqyw.smart.widget.PercentLinearLayout>
 
     <View style="@style/InputBoxDivider1"/>
 
-    <com.cqyw.smart.view.PercentLinearLayout
+    <com.cqyw.smart.widget.PercentLinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_heightPercent="8%"
@@ -108,6 +108,6 @@
             app:layout_widthPercent="75%p"
             android:inputType="number"
             android:hint="输入短信验证码"/>
-    </com.cqyw.smart.view.PercentLinearLayout>
+    </com.cqyw.smart.widget.PercentLinearLayout>
 
-</com.cqyw.smart.view.PercentLinearLayout>
+</com.cqyw.smart.widget.PercentLinearLayout>

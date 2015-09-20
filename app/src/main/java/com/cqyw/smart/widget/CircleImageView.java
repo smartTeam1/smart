@@ -1,4 +1,4 @@
-package com.cqyw.smart.view;
+package com.cqyw.smart.widget;
 
 /**
  * Created by Kairong on 2015/9/12.

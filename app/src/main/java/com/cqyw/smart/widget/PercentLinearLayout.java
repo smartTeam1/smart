@@ -1,4 +1,4 @@
-package com.cqyw.smart.view;
+package com.cqyw.smart.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
