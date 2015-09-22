@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.cqyw.smart.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.cqyw.smart.widget.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -46,7 +46,7 @@
             android:text="上传头像"/>
     </LinearLayout>
     <!-- 三个信息输入框-->
-    <com.cqyw.smart.view.PercentLinearLayout
+    <com.cqyw.smart.widget.PercentLinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_heightPercent="8%p"
@@ -73,7 +73,7 @@
             android:inputType="phone"
             android:textColorHint="@color/hint_color"
             android:background="@android:color/transparent"/>
-    </com.cqyw.smart.view.PercentLinearLayout>
+    </com.cqyw.smart.widget.PercentLinearLayout>
 
     <View
         android:layout_width="0dp"
@@ -82,7 +82,7 @@
         android:layout_height="@dimen/input_box_divider_width"
         android:background="@color/hint_color"/>
 
-    <com.cqyw.smart.view.PercentLinearLayout
+    <com.cqyw.smart.widget.PercentLinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_heightPercent="8%p"
@@ -121,7 +121,7 @@
             android:textColor="@color/text_gray_dark"
 
             />
-    </com.cqyw.smart.view.PercentLinearLayout>
+    </com.cqyw.smart.widget.PercentLinearLayout>
 
     <View
         android:layout_width="0dp"
@@ -130,7 +130,7 @@
         android:layout_height="@dimen/input_box_divider_width"
         android:background="@color/hint_color"/>
 
-    <com.cqyw.smart.view.PercentLinearLayout
+    <com.cqyw.smart.widget.PercentLinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_heightPercent="8%p"
@@ -158,5 +158,5 @@
             android:inputType="phone"
             android:textColorHint="@color/hint_color"
             android:background="@android:color/transparent"/>
-    </com.cqyw.smart.view.PercentLinearLayout>
-</com.cqyw.smart.view.PercentLinearLayout>
+    </com.cqyw.smart.widget.PercentLinearLayout>
+</com.cqyw.smart.widget.PercentLinearLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.cqyw.smart.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.cqyw.smart.widget.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -30,7 +30,7 @@
             <!--android:gravity="center"-->
             <!--android:layout_centerVertical="true"-->
             <!--/>-->
-        <com.cqyw.smart.view.PercentLinearLayout
+        <com.cqyw.smart.widget.PercentLinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:minWidth="40dp"
@@ -57,7 +57,7 @@
                 android:src="@mipmap/more_icn"
                 android:visibility="gone"
                 />
-        </com.cqyw.smart.view.PercentLinearLayout>
+        </com.cqyw.smart.widget.PercentLinearLayout>
     </android.support.percent.PercentRelativeLayout>
 
     <ScrollView
@@ -217,4 +217,4 @@
         </LinearLayout>
     </ScrollView>
 
-</com.cqyw.smart.view.PercentLinearLayout>
+</com.cqyw.smart.widget.PercentLinearLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.cqyw.smart.view.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.cqyw.smart.widget.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -28,7 +28,7 @@
     </android.support.percent.PercentRelativeLayout>
 
     <!-- 发送邮箱验证码-->
-    <com.cqyw.smart.view.PercentLinearLayout
+    <com.cqyw.smart.widget.PercentLinearLayout
         android:id="@+id/send_mailcode_layout"
         style="@style/PercentWidthPercentHeight"
         app:layout_widthPercent="90%p"
@@ -43,7 +43,7 @@
             android:text="请输入邮箱地址，接受邮箱验证码"
             android:textColor="@android:color/white"
             android:textSize="15sp"/>
-        <com.cqyw.smart.view.PercentLinearLayout
+        <com.cqyw.smart.widget.PercentLinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_heightPercent="25%p"
@@ -63,7 +63,7 @@
                 android:textSize="13sp"
                 android:text="\@mail.ustc.edu.cn"
                 android:gravity="center"/>
-        </com.cqyw.smart.view.PercentLinearLayout>
+        </com.cqyw.smart.widget.PercentLinearLayout>
         <Button
             android:id="@+id/ev2_send_mailcode"
             style="@style/RoundedStrokeBtnStyle"
@@ -71,9 +71,9 @@
             app:layout_widthPercent="50%"
             app:layout_heightPercent="25%"
             android:text="发送邮箱验证码"/>
-    </com.cqyw.smart.view.PercentLinearLayout>
+    </com.cqyw.smart.widget.PercentLinearLayout>
     <!-- 确认邮箱验证码-->
-    <com.cqyw.smart.view.PercentLinearLayout
+    <com.cqyw.smart.widget.PercentLinearLayout
         style="@style/PercentWidthPercentHeight"
         app:layout_marginTopPercent="10%p"
         app:layout_widthPercent="80%p"
@@ -81,7 +81,7 @@
         android:orientation="vertical"
         android:visibility="gone"
         >
-        <com.cqyw.smart.view.PercentLinearLayout
+        <com.cqyw.smart.widget.PercentLinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_heightPercent="30%"
@@ -106,7 +106,7 @@
                 android:layout_gravity="center_vertical"
                 android:text="重发"
                 />
-        </com.cqyw.smart.view.PercentLinearLayout>
+        </com.cqyw.smart.widget.PercentLinearLayout>
 
         <Button
             android:id="@+id/ev2_confirm_btn"
@@ -117,7 +117,7 @@
             android:text="确认"
             android:layout_gravity="center_horizontal"/>
 
-    </com.cqyw.smart.view.PercentLinearLayout>
+    </com.cqyw.smart.widget.PercentLinearLayout>
 
 
-</com.cqyw.smart.view.PercentLinearLayout>
+</com.cqyw.smart.widget.PercentLinearLayout>
